@@ -1,3 +1,4 @@
+var data = require('../data.json');
 exports.viewTask = function(req, res){
     res.render('task_page', {});
 };

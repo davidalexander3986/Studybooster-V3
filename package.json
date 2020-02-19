@@ -12,10 +12,15 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "^3.21.2",
+    "cookie-session": "^1.4.0",
+    "express": "^4.16.4",
     "express3-handlebars": "^0.5.2",
+    "favicon": "0.0.2",
     "mongodb": "*",
-    "mongoose": "*"
+    "mongoose": "^5.9.1",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "serve-favicon": "^2.5.0"
   },
   "engines": {
     "node": "10.13.x",
