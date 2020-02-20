@@ -9,6 +9,9 @@
 	<link href="/css/main.css" rel="stylesheet">
 	<link href="/css/focusbar.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/introHCI.js"></script>
 </head>
 
 <body>
@@ -19,7 +22,7 @@
 		<!-- p means paragraph -->
 		<div class="jumbotron">
 <ul>
-  <li><a href="#home">My Focus</a></li>
+  <li><a href="#home">{{#if user}}{{user.name}}'s {{/if}}Focus</a></li>
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">More</a>
     <div class="dropdown-content">
@@ -62,7 +65,7 @@
 		{{/each}} -->
 	{{#each friends}}
 		<div class="task" id="name" >
-			<a href="/task_page" class="thumbnail">
+			<a class="thumbnail">
 				<p>{{name}}</p>
 			</a>
 			<div id="class_assoc">
