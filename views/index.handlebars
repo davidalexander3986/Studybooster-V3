@@ -9,17 +9,30 @@
 	<link href="/css/main.css" rel="stylesheet">
 	<link href="/css/focusbar.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+
 </head>
 
 <body>
-	<div id="box">
 		<div id="footer">
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
 <ul>
-  <li><a href="#home">My Focus</a></li>
+  <li><a2>My Focus</a2></li>
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">More</a>
     <div class="dropdown-content">
@@ -40,8 +53,6 @@
 
 		</div>
 
-			<h1>My Tasks</h1>
-
 <div class="foucsbar">
   <div class="fbar">
     <div class="skill">Your Focus Score</div>
@@ -49,6 +60,10 @@
       <div class="speech-bubble photo">80</div>
       <div class="bar-inner ph"></div>
 </div>	
+
+<div class=taskc><h3>All of Your Tasks</h3></div>
+<div class="taskb"><button class="btn121" id="hide">Hide All Task</button>
+<button class="btn121" id="show">Show All Task</button>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
@@ -106,7 +121,7 @@
 			</div>
 		</div>
 	{{/each}}
-	</div>
+	</div></div>
 
 		<div id="container">
 			<a href="/stop_watch" class="thumbnail">
@@ -114,7 +129,6 @@
 			</a>
 		</div>
 
-	</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
