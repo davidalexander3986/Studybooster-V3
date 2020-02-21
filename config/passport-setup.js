@@ -22,9 +22,10 @@ passport.use(new GoogleStrategy({
     clientSecret: keys.google.clientSecret
 }, (accessToken, refreshToken, profile, done) => {
     // passport callback function
-
+    console.log(profile);
     //check if user exists already
     User.findOne({googleId:profile.id}).then((currentUser) => {
+        console.log("able to connect to db");
         if(currentUser){
             // already have the user
             console.log('user is ' + currentUser);

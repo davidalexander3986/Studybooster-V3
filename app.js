@@ -40,12 +40,11 @@ app.use(cookieSession({
 app.use(passport.initialize());
 app.use(passport.session());
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
-
-mongoose.connect(keys.mongodb.dbURI, () => {
+mongoose.connect(process.env.MONGODB_URI || keys.mongodb.dbURI,{ useNewUrlParser: true, useUnifiedTopology: true}, () => {
     console.log('connected to mongodb');
 });
 

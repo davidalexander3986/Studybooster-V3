@@ -3,7 +3,7 @@
 module.exports = {
     google: {
         clientID:"623551171328-mrpae7g3h4kv2e542r6gqsk001fkd8ev.apps.googleusercontent.com",
-        clientSecret:"VOjI4jrbCjIZJ3x0xht39TZg"
+        clientSecret:"ZT201dQ2eXxo6j2vkFxVVXWd"
     },
     mongodb: {
         dbURI:'mongodb+srv://d1alexan:test@da-oath-5dwaf.mongodb.net/test?retryWrites=true&w=majority'
