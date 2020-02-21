@@ -69,3 +69,13 @@
   box-sizing: border-box;
   padding: 5px 0 0 0;
 }
+
+.sad1 {
+  border:solid black;
+  border-radius: 12px;
+  font-size: 20px;
+  height:30px;
+  width: 10%;
+  margin: 20px auto;
+  float: center;
+}

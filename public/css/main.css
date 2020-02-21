@@ -19,12 +19,15 @@
 }
 
 .task_time {
-	border-style: dashed;
+	  border-style: dashed;
+    border-radius: 12px;
+    background-color: lightgreen;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     width: 240px
 }
+
 
 .task_timeadd{
 	border-top-style: solid;
@@ -34,7 +37,11 @@
   	margin-bottom: 10px
 }
 
-.container h3 , h5{
+.container{
+  text-align:center;
+}
+
+.container h2, h3 , h5{
 	text-align:center;
 }
 #button1{
@@ -82,14 +89,19 @@
 
 .task #time_spent{
 	text-align: right;
-	font-size: 20px;
+	font-size: 15px;
 
 }
 .task #class_assoc{
-	font-size: 20px;
+	font-size: 15px;
 }
+
+.task #cancel{
+	font-size: 15px;
+}
+
 .task#name{
-	font-size: 20px;
+	font-size: 15px;
 }
 .friend{
 	display: flex;
@@ -138,11 +150,49 @@
   border: 2px solid black;
   background-color: white;
   color: black;
-  padding: 14px 28px;
-  font-size: 16px;
+  padding: 8px 28px;
+  font-size: 10px;
   cursor: pointer;
 }
 
+.btn121 {
+  border: 2px solid lightgreen;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  padding: 8px 28px;
+  font-size: 10px;
+  cursor: pointer;
+  float: pointer
+}
+
+.btn121:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.btn124 {
+  border: 2px solid grey;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  padding: 8px 28px;
+  font-size: 10px;
+  cursor: pointer;
+  float: pointer
+}
+
+.btn125 {
+  border: 2px solid lightgreen;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  padding: 8px 28px;
+  font-size: 10px;
+  cursor: pointer;
+  float: left
+}
+
+.default {color: black; shape: round}
 /* Green */
 .success {
   border-color: #4CAF50;
@@ -152,4 +202,27 @@
 .success:hover {
   background-color: #4CAF50;
   color: white;
+}
+
+p121 {
+  border: 2px solid black
+  border-radius: 12px;
+}
+
+.taskb{
+  border: 2px solid lightgreen;
+  border-radius: 12px;
+  background-color: lightgreen;
+}
+
+.taskc{
+  border: 2px inset black;
+  border-radius: 12px;
+}
+
+.center12 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
