@@ -1,28 +1,48 @@
 <html>
 
 <head>
-	<link href="/css/fake.css" rel="stylesheet">
 	<link href="/css/main.css" rel="stylesheet">
+	<link href="/css/focusbar.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/dropdown.css">
 	<script src="/js/fake.js"></script>
 	<style>
 	.google-btn{
                 color: #fff;
                 text-decoration: none;
-                font-size: 18px;
+                font-size: 50px;
                 padding: 10px;
                 background: #ff5353;
+                position: center;
             }
-	</style>
+
+	.google-btn:hover, .dropdown:hover .dropbtn {
+  				background-color: grey;
+			}
+	</style>	
 </head>
 
 <body>
-	<div id="box">
 		<div id="footer">
 	<div class="container">
-  <h3>Login:</h3>
+		<div class="jumbotron">
+<ul>
+
+  <li><a2>{{#if user}}{{user.name}}'s {{/if}}Login Page</a2></li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">More</a>
+    <div class="dropdown-content">
+      <a href="/">My Focus</a>
+      <a href="/friends">Friends</a>
+      <a href="/fake">Login</a>
+    </div>
+  </li>
+</ul>
 
 	</div>
+	<h1>Please Login By:</h1>
 	 <a class="google-btn" href="/auth/google">Google+</a>
+	 <h2>↑↑↑Click↑↑↑</h2>
 
 <!-- <form name="loginEmail" onsubmit="return validateForm();" method="post">
 
@@ -39,6 +59,5 @@
 </form> -->
 
 
-  </div>
 </body>
 </html>
