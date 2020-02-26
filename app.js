@@ -20,7 +20,7 @@ var add = require('./routes/add');
 var friends = require('./routes/friends');
 
 var task = require('./routes/task');
-
+var time = require('./routes/time'); // A/B testing
 var stopwatch = require('./routes/stopwatch');
 // Example route
 // var user = require('./routes/user');
@@ -77,6 +77,9 @@ app.get('/stop_watch',stopwatch.stopWatch);
 app.get('/fake',fake.fake);
 // Example route
 // app.get('/users', user.list);
+// A/B testing features
+app.get('/add',add.addFriend);
+app.get('/time',time.view);
 
 //STUFF for Google login
 
